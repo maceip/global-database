@@ -116,21 +116,16 @@ Parameters:
   DBEngineVersion:
     Description: Select Database Engine Version
     Type: String
-    Default: 13.3
+    Default: 15.2
     AllowedValues:
-      - 10.16
-      - 10.17
-      - 11.11
-      - 11.12
-      - 12.6
-      - 12.7
-      - 13.3
+      - 15.2
 
   DBInstanceClass:
     Default: db.r6g.large
     Description: Database Instance Class. db.r5 instance classes are supported for Aurora PostgreSQL 10.6 or later. db.t3.medium instance class is supported for Aurora PostgreSQL 10.7 or later.
     Type: String
     AllowedValues:
+    - db.r6g.large
     - db.r6i.large
     - db.r5.large
     - db.r5.xlarge
