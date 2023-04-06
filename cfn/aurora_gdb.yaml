@@ -48,42 +48,17 @@ Parameters:
   DBEngineVersion:
     Description: Select Database Engine Version
     Type: String
-    Default: 13.7
+    Default: 14.6
     AllowedValues:
-      - 11.16
-      - 12.11
-      - 13.7
-      - 14.3
+      - 14.6
      
   DBInstanceClass:
     Default: db.r6g.large
     Description: Database Instance Class
     Type: String
     AllowedValues:
-    - db.t4g.medium
-    - db.t4g.large
-    - db.r5.large
-    - db.r5.xlarge
-    - db.r5.2xlarge
-    - db.r5.4xlarge
-    - db.r5.8xlarge
-    - db.r5.12xlarge
-    - db.r5.16xlarge
-    - db.r5.24xlarge
     - db.r6g.large
-    - db.r6g.xlarge
-    - db.r6g.2xlarge
-    - db.r6g.4xlarge
-    - db.r6g.8xlarge
-    - db.r6g.12xlarge
-    - db.r6g.16xlarge
-    - db.x2g.large
-    - db.x2g.xlarge
-    - db.x2g.2xlarge
-    - db.x2g.4xlarge
-    - db.x2g.8xlarge
-    - db.x2g.12xlarge
-    - db.x2g.16xlarge
+    - db.r6i.large
 
   DBSnapshotName:
     Description: Optional. DB Snapshot ID to restore database. Leave this blank if you are not restoring from a snapshot.
@@ -219,7 +194,7 @@ Mappings:
       "family": "aurora-postgresql12"
     "13.7":
       "family": "aurora-postgresql13"
-    "14.3":
+    "14.6":
       "family": "aurora-postgresql14"
 
       
