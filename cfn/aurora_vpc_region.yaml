@@ -127,18 +127,14 @@ Parameters:
       - 13.3
 
   DBInstanceClass:
-    Default: db.r5.large
+    Default: db.r6g.large
     Description: Database Instance Class. db.r5 instance classes are supported for Aurora PostgreSQL 10.6 or later. db.t3.medium instance class is supported for Aurora PostgreSQL 10.7 or later.
     Type: String
     AllowedValues:
+    - db.r6i.large
     - db.r5.large
     - db.r5.xlarge
-    - db.r5.2xlarge
-    - db.r5.4xlarge
-    - db.r5.8xlarge
-    - db.r5.12xlarge
-    - db.r5.16xlarge
-    - db.r5.24xlarge
+
 
 Conditions:
   createResource: !Equals [!Ref DeployAurora, true]
